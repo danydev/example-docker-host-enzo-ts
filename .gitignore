@@ -1,0 +1,4 @@
+mounted-files/logs/**
+mounted-files/config/*
+mounted-files/cache/**
+!.gitkeep
