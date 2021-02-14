@@ -3,8 +3,7 @@
 Run an **unofficial** docker container for [ENZO-TS](https://www.enzobot.com). Use at your own risk.  
 
 ## Setup
-- Run ENZO-TSC with UI to configure your account, and setup the client.
-- Put the resulting configuration file (named `enzo_tsc_config.json`) in this repository path `mounted-files\config\enzo_tsc_config.json`. The file can be located by clicking `File\Open Profile Folder` in ENZO-TSC UI.
+- To produce the json config file, the simplest way is to run ENZO-TSC with UI, so you can configure your account, and setup the client. Then you put the resulting configuration file (named `enzo_tsc_config.json`) in this repository path `mounted-files\config\enzo_tsc_config.json`. The file can be located by clicking `File\Open Profile Folder` in ENZO-TSC UI.
 - Run `docker-compose up -d`
 
 ## Logs

@@ -1,3 +1,4 @@
 mounted-files/logs/**
-mounted-files/config/*
+mounted-files/config/
+mounted-files/persist_data/
 !.gitkeep

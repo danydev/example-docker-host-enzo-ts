@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   enzo-bot:
-    image: dorru/enzo-ts:1.2.12
+    image: dorru/enzo-ts:1.7.8-2
     container_name: enzo-ts
     hostname: enzo-ts
     #restart: always # decomment to allow docker to up the containers at reboot or if tsl crashes
