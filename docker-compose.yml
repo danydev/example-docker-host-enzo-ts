@@ -10,3 +10,4 @@ services:
       - ./mounted-files/config/enzo_tsc_config.json:/enzo_ts/_var/enzo_tsc/profile_default/enzo_tsc_config.json
       - ./mounted-files/logs/enzo_tsl:/enzo_ts/_var/enzo_tsl/profile_default/logs
       - ./mounted-files/logs/enzo_tsc:/enzo_ts/_var/enzo_tsc/profile_default/logs
+      - ./mounted-files/persist_data:/enzo_ts/_var/enzo_tsc/profile_default/persist_data
