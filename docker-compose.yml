@@ -2,12 +2,10 @@ version: '3.7'
 
 services:
   enzo-bot:
-    image: dorru/enzo-ts:1.7.8-2
+    image: dorru/enzo-ts:2.0.4
     container_name: enzo-ts
     hostname: enzo-ts
     #restart: always # decomment to allow docker to up the containers at reboot or if tsl crashes
     volumes:
-      - ./mounted-files/config/enzo_tsc_config.json:/enzo_ts/_var/enzo_tsc/profile_default/enzo_tsc_config.json
-      - ./mounted-files/logs/enzo_tsl:/enzo_ts/_var/enzo_tsl/profile_default/logs
-      - ./mounted-files/logs/enzo_tsc:/enzo_ts/_var/enzo_tsc/profile_default/logs
-      - ./mounted-files/persist_data:/enzo_ts/_var/enzo_tsc/profile_default/persist_data
+      - ./mounted-files/config/enzo_tsc:/enzo_ts/_var/enzo_tsc
+      - ./mounted-files/config/enzo_tsl:/enzo_ts/_var/enzo_tsl
