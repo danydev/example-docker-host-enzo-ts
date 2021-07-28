@@ -2,10 +2,11 @@ version: '3.7'
 
 services:
   enzo-bot:
-    image: dorru/enzo-ts:2.0.4
+    image: dorru/enzo-ts:3.0.8
     container_name: enzo-ts
     hostname: enzo-ts
     #restart: always # decomment to allow docker to up the containers at reboot or if tsl crashes
     volumes:
-      - ./mounted-files/config/enzo_tsc:/enzo_ts/_var/enzo_tsc
       - ./mounted-files/config/enzo_tsl:/enzo_ts/_var/enzo_tsl
+      # Only mounted to maintain "persist_data" subfolders
+      - ./mounted-files/config/enzo_tsc:/enzo_ts/_var/enzo_tsc
